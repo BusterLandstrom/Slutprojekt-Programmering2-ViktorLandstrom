@@ -7,11 +7,15 @@ Tanken jag har bakom mitt projekt är att det ska vara ett spel i java som ska g
 # Spelplanering
 
 ## Sprites
+
 **Character Sprite**
+
 <img src="javaPrgrmDir\Sprites\CharacterSprite\CharacterSprite.png" alt="CharacterSprite" width="300px" height="300px">
 
 **Ground Sprite**
+
 <img src="javaPrgrmDir\Sprites\GroundSprite\GroundSprite.png" alt="GroundSprite" width="300px" height="300px">
 
 **Key Sprite**
+
 <img src="javaPrgrmDir\Sprites\KeySprite\KeySprite.gif" alt="KeySprite" width="300px" height="300px">
