@@ -7,7 +7,6 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 public class Main {
 
     public static void main(String[] args) {
-
         GameFrame gf = new GameFrame();
 
         gf.setSize(1280, 720);
