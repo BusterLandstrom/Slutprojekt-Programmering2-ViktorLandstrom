@@ -129,8 +129,11 @@ public class Player {
         } else if(shootDir == 0) {
             px += -10;
         }
-
-        shooting += 0.3;
+        if (shooting >= 50){
+            shooting = 0;
+        }else {
+            shooting += 0.3;
+        }
 
         if(xs > 0 && xs < .75){
             xs = 0;
