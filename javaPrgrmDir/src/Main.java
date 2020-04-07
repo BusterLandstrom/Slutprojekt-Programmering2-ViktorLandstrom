@@ -1,12 +1,14 @@
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 
 import static java.awt.Toolkit.*;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
 public class Main {
 
-    public static void main(String[] args) {
+    /**/ //Main function to initiate all other functions and set base values
+    public static void main(String[] args) throws IOException {
         GameFrame gf = new GameFrame();
 
         gf.setSize(1280, 720);
@@ -21,4 +23,5 @@ public class Main {
         gf.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
     }
+    /**/
 }
