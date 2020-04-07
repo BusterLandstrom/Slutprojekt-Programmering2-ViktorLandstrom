@@ -7,4 +7,4 @@ Tanken jag har bakom mitt projekt är att det ska vara ett spel i java som ska g
 # Spelplanering
 
 ## Sprites
-![CharacterSprite](javaPrgrmDir\Sprites\CharacterSprite\CharacterSprite.png)
+<img src="javaPrgrmDir\Sprites\CharacterSprite\CharacterSprite.png" alt="CharacterSprite" width="300px" height="300px">
