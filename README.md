@@ -20,3 +20,7 @@ Spelet hade jag tänkt skulle vara en enkel platformare med möjligtvis några f
 **Key Sprite**
 
 <img src="javaPrgrmDir\Sprites\KeySprite\KeySprite.gif" alt="KeySprite" width="300px" height="300px">
+
+**Enemy Sprite**
+
+<img src="javaPrgrmDir\Sprites\EnemySprite\EnemySprite.gif" alt="EnemySprite" width="300px" height="300px">
