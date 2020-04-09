@@ -15,6 +15,8 @@ public class GamePanel extends javax.swing.JPanel implements ActionListener {
 
     Enemy enemy;
 
+    Key key;
+
     ArrayList<Ground> grounds = new ArrayList<>();
 
     /**/ //Declaring Timer object as gameTimer
@@ -26,6 +28,7 @@ public class GamePanel extends javax.swing.JPanel implements ActionListener {
 
         player = new Player(400,300,this);
         enemy = new Enemy(850,350,this);
+        key = new Key(950, 448, this);
 
         createGround();
 
@@ -61,6 +64,9 @@ public class GamePanel extends javax.swing.JPanel implements ActionListener {
 
         player.draw(g2d);
         enemy.draw(g2d);
+        if(Player.getWin()) {
+            key.draw(g2d);
+        }
         for(Ground ground: grounds) {
             ground.draw(g2d);
         }

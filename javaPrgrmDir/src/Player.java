@@ -1,12 +1,14 @@
 import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Random;
 
 
 public class Player {
+
     /**/ //Declaring x and y position and also width and height of player
     int x;
     int y;
@@ -31,6 +33,11 @@ public class Player {
     boolean isShooting = false;
     int shootDir;
     Rectangle projHitBox;
+    /**/
+
+    /**/ //Key toggle
+    static Boolean isActive = true;
+    static Boolean gotKey = false;
     /**/
 
     /**/ //Declaring the variable for hit box as charHitBox
@@ -72,15 +79,15 @@ public class Player {
         /**/
     }
     /**/
-    public int getHp(){
-        return hp;
-    }
-    public void setHp(int hp){
-        this.hp += hp;
+
+    public static boolean getWin(){
+        return isActive;
     }
 
     /**/ //Moving the character
     public void set(){
+        if(gotKey)isActive = false;
+        if(gotKey)System.out.println("Win!");
         if(keyLeft && keyRight || !keyLeft && !keyRight){
             xs *= 0.8;
         } else if (keyLeft && !keyRight){
@@ -217,6 +224,11 @@ public class Player {
            }
        }
        /**/
+        /**/ //Enemy hit box setup for character interaction
+        if(charHitBox.intersects(Key.getKeyHitBox())){
+            gotKey = true;
+        }
+        /**/
 
         x += xs;
         y += ys;

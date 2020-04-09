@@ -69,7 +69,6 @@ public class Enemy {
             xs = -2;
         }
         dirTimer += -0.01;
-        System.out.println(dirTimer);
 
         if (dirTimer < -1){
             dirTimer = 1;
